@@ -1,18 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
+import  MapContainer  from './views/MapContainer.vue'
 </script>
-
 <template>
+
   <header>
+
     <div class="wrapper">
       <nav>
-        <!-- <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink> -->
+        <MapContainer/>
+        <!-- <RouterLink to="/"></RouterLink> -->
+        <!-- <RouterLink to="/about">About</RouterLink> -->
       </nav>
     </div>
   </header>
-
-  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
@@ -63,9 +64,7 @@ nav a:first-of-type {
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    width: 90rem;
   }
 
   nav {
